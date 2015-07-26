@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{325DE640-C393-4E73-AC43-BE9989DCE7B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test.SpecFlowPlugin</RootNamespace>
+    <AssemblyName>test.SpecFlowPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Test\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow.Generator">
+      <HintPath>..\packages\SpecFlow.CustomPlugin.1.9.0\lib\net40\TechTalk.SpecFlow.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow.Parser">
+      <HintPath>..\packages\SpecFlow.CustomPlugin.1.9.0\lib\net40\TechTalk.SpecFlow.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow.Utils">
+      <HintPath>..\packages\SpecFlow.CustomPlugin.1.9.0\lib\net40\TechTalk.SpecFlow.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.2.33.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeDomExtensions\CodeArrayCreateExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeArrayIndexerExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeAssignStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeAttachEventStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeAttributeArgumentCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeAttributeArgumentExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeAttributeDeclarationCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeAttributeDeclarationExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeBinaryOperatorExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeCastExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeCatchClauseCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeCatchClauseExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeConditionStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeDelegateCreateExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeDelegateInvokeExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeDirectionExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeEventReferenceExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeExpressionCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeExpressionStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeFieldReferenceExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeIndexerExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeIterationStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeLabeledStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeMemberMethodExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeMemberPropertyExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeMethodInvokeExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeMethodReferenceExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeMethodReturnStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeObjectCreateExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeParameterDeclarationExpressionCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeParameterDeclarationExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodePropertyReferenceExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeRemoveEventStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeStatementCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeThrowExceptionStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeTryCatchFinallyStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeTypeDeclarationExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeTypeOfExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeTypeReferenceCollectionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeTypeReferenceExpressionExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeTypeReferenceExtensions.cs" />
+    <Compile Include="CodeDomExtensions\CodeVariableDeclarationStatementExtensions.cs" />
+    <Compile Include="CodeDomExtensions\IDictionaryExtensions.cs" />
+    <Compile Include="MsTest\MsTestWebDriverGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selenium\SeleniumStepDefinitionBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\test.Selenium\test.Selenium.csproj">
+      <Project>{06645cf8-97a6-4448-967d-ecbf95182dbe}</Project>
+      <Name>test.Selenium</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

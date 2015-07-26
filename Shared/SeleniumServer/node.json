@@ -1,0 +1,29 @@
+{ 
+	"capabilities": 
+		[{
+			"browserName": "chrome",
+			"platform": "WINDOWS",
+			"version": "",
+			"maxInstances": 5,
+		},{ 
+			"browserName": "ie", 
+			"platform": "WINDOWS",
+			"version": "",
+			"maxInstances": 5,
+		}, { 
+			"browserName": "firefox", 
+			"platform": "WINDOWS", 
+			"version": "",
+			"maxInstances": 5,
+		}],
+		
+	"configuration": { 
+		"nodeTimeout": 120, 
+		"port": 5555, 
+		"hubPort": 4441, 
+		"hubHost": "localhost", 
+		"registerCycle": 5000, 
+		"register": true,
+		"maxSession": 5
+	}
+}

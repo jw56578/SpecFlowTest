@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{82D7DD32-9AF5-4826-98EF-F8C7B520C26F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.Selenium", "test.Selenium\test.Selenium.csproj", "{06645CF8-97A6-4448-967D-ECBF95182DBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.SpecFlowPlugin", "test.SpecFlow\test.SpecFlowPlugin.csproj", "{325DE640-C393-4E73-AC43-BE9989DCE7B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.AcceptanceTests", "test.AcceptanceTests\test.AcceptanceTests.csproj", "{9BDA7F71-B835-4A87-8434-267C36D2DF63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{87520263-80BE-45C6-8DD7-74F455A44668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06645CF8-97A6-4448-967D-ECBF95182DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06645CF8-97A6-4448-967D-ECBF95182DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06645CF8-97A6-4448-967D-ECBF95182DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06645CF8-97A6-4448-967D-ECBF95182DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325DE640-C393-4E73-AC43-BE9989DCE7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325DE640-C393-4E73-AC43-BE9989DCE7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325DE640-C393-4E73-AC43-BE9989DCE7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325DE640-C393-4E73-AC43-BE9989DCE7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDA7F71-B835-4A87-8434-267C36D2DF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDA7F71-B835-4A87-8434-267C36D2DF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDA7F71-B835-4A87-8434-267C36D2DF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDA7F71-B835-4A87-8434-267C36D2DF63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
